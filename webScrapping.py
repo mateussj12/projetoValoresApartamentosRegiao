@@ -17,7 +17,7 @@ def carregarDriver():
     print("# Carrega o driver do firefox")
     gecko_driver_path = 'C:\\Users\\Jesus\\Desktop\\projetoA\\valoresApartamentosRegiao\\firefoxdriver-win64\\geckodriver.exe'
     firefox_options = Options()
-    #firefox_options.add_argument("--headless")  # Ativa o modo headless
+    firefox_options.add_argument("--headless")  # Ativa o modo headless
     firefox_service = FirefoxService(executable_path=gecko_driver_path)
     driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
     return driver
@@ -104,7 +104,7 @@ def coletarDadosAnuncio(driver, bairros, cidades):
     df = pd.DataFrame(dadosAnuncios)
     print(df)
     
-    dataCSV = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S')         
+    dataCSV = datetime.datetime.now().strftime('%Y-%m-%d_%H%M%S')         
     df.to_csv(f"valoresMoradia_{dataCSV}.csv", index=False)
     
 def main():
