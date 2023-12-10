@@ -19,7 +19,7 @@ print("""
                                                  
     """)
 print("""
-    **Estado**: Brasilia - DF 
+    **Estado**: Brasília - DF 
     **Desenvolvedor responsável**: Mateus Santos de Jesus
     **Objetivo**: Esse script acessa o site do Quinto Andar, 
     faz a coleta de informações com base nos requisitos de desenvolvimento,
