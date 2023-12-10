@@ -1,4 +1,4 @@
-# Sistema de coleta de calores de apartamentos e casas
+# Sistema de coleta de valores de apartamentos e casas
 Esse projeto faz a coleta dos valores de apartamentos e casas do site Quinto Andar.
 
 A coleta é feita com base em cidades por Estados onde ele retorna os dez primeiros resultados de cada cidade estabelecida.
