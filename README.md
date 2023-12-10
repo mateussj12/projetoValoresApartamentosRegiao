@@ -18,6 +18,7 @@ afim de realizar tomadas de decisões em cima dos resultados coletados.
 
 ### Uso:
 Para usar basta clonar o projeto e executar o comando: *python script_mineracao.py*
+
 Além disso, é possível personalizar o script para trazer resultados mais adequados para sua consulta.  
 
 ### Considerações finais:
