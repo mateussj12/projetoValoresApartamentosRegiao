@@ -6,18 +6,17 @@ A coleta é feita com base em cidades por Estados onde ele retorna os dez primei
 Por fim, os resultado são armazenados em um arquivo CSV para consulta e manipulação.
 
 ### Conceitos abordados:
-Nesse projeto foram abordados os conceitos de Web Scrapping para coleta de informações em um determinado site
-
+Nesse projeto foram abordados os conceitos de Web Scrapping para coleta de informações em um determinado site,
 afim de realizar tomadas de decisões em cima dos resultados coletados.
 
 ### Requisitos:
 - Instalar o Python3
 - Instalar as bibliotecas, selenium, pandas, time, datetime 
 - Driver do navegador Firefox
-- Navegadro Firefox atualizado
+- Navegador Firefox atualizado
 
 ### Uso:
-Para usar basta clonar o projeto e executar o comando: *python script_mineracao.py*
+Para usar basta clonar o projeto e executar o comando: *python script_mineracao.py*.
 
 Além disso, é possível personalizar o script para trazer resultados mais adequados para sua consulta.  
 
