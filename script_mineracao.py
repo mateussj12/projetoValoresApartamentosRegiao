@@ -4,28 +4,47 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.firefox.options import Options
-
 import pandas as pd
 import time
 import datetime
 
+
+print("""
+        ██╗███████╗███████╗██╗   ██╗███████╗
+        ██║██╔════╝██╔════╝██║   ██║██╔════╝
+        ██║█████╗  ███████╗██║   ██║███████╗
+   ██   ██║██╔══╝  ╚════██║██║   ██║╚════██║
+   ╚█████╔╝███████╗███████║╚██████╔╝███████║
+    ╚════╝ ╚══════╝╚══════╝ ╚═════╝ ╚══════╝
+                                                 
+    """)
+print("""
+    **Estado**: Brasilia - DF 
+    **Desenvolvedor responsável**: Mateus Santos de Jesus
+    **Objetivo**: Esse script acessa o site do Quinto Andar, 
+    faz a coleta de informações com base nos requisitos de desenvolvimento,
+    converte as informações para um dataframe,
+    transcreve para um arquivo csv...
+    """)
+
+print("# Configurando coleta de logs")
 # Configuração de logging
 logging.basicConfig(filename='log_file.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Iniciar o driver do chrome
+# Inicia o driver inicia
 def carregarDriver():
-    print("# Carrega o driver do firefox")
+    print("# Iniciando o Driver do Firefox")
     gecko_driver_path = 'C:\\Users\\Jesus\\Desktop\\projetoA\\valoresApartamentosRegiao\\firefoxdriver-win64\\geckodriver.exe'
     firefox_options = Options()
-    firefox_options.add_argument("--headless")  # Ativa o modo headless
+    firefox_options.add_argument("--headless")  
     firefox_service = FirefoxService(executable_path=gecko_driver_path)
     driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
     return driver
             
 
-# Abrir o site do quinto andar
+# Abre o site do quinto andar
 def iniciarNavegador(driver, url):
-    print("# Abre o site do Quinto Andar")
+    print("# Abrindo o site do Quinto Andar")
     driver.get(url)
     driver.maximize_window()
 
@@ -83,9 +102,9 @@ def coletarDadosAnuncio(driver, bairros, cidades):
 
                 dadosAnuncios.append({
                     'Titulo': tituloAnuncio,
-                    'Tipo': tipoAnuncio.text,  # Obtenha o texto do elemento
-                    'Endereco': enderecoAnuncio.text,  # Obtenha o texto do elemento
-                    'Regiao': regiaoAnuncio.text,  # Obtenha o texto do elemento
+                    'Tipo': tipoAnuncio.text,  
+                    'Endereco': enderecoAnuncio.text,  
+                    'Regiao': regiaoAnuncio.text, 
                     'Preco': valorAluguelAnuncio,
                     'Data de coleta' : dataAnuncios  
                 })
@@ -106,7 +125,8 @@ def coletarDadosAnuncio(driver, bairros, cidades):
     
     dataCSV = datetime.datetime.now().strftime('%Y-%m-%d_%H%M%S')         
     df.to_csv(f"valoresMoradia_{dataCSV}.csv", index=False)
-    
+
+# Função MAIN responsável por receber os valores nas variáveis.    
 def main():
     # Header
     driver = carregarDriver()
