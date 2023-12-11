@@ -16,7 +16,9 @@ afim de realizar tomadas de decisões em cima dos resultados coletados.
 - Navegador Firefox atualizado
 
 ### Uso:
-Para usar basta clonar o projeto e executar o comando: *python script_mineracao.py*.
+Para usar basta executar os comandos: 
+``` python script_mineracao.py ```
+``` git clone https://github.com/mateussj12/projetoAutomacaoMonitoramento.git ```
 
 Além disso, é possível personalizar o script para trazer resultados mais adequados para sua consulta.  
 
