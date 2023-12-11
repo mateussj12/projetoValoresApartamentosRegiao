@@ -17,8 +17,10 @@ afim de realizar tomadas de decisões em cima dos resultados coletados.
 
 ### Uso:
 Para usar basta executar os comandos: 
-``` python script_mineracao.py ```
-``` git clone https://github.com/mateussj12/projetoAutomacaoMonitoramento.git ```
+
+``` $ git clone https://github.com/mateussj12/projetoAutomacaoMonitoramento.git ```
+
+``` $ python script_mineracao.py ```
 
 Além disso, é possível personalizar o script para trazer resultados mais adequados para sua consulta.  
 
