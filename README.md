@@ -15,6 +15,19 @@ afim de realizar tomadas de decisões em cima dos resultados coletados.
 - Driver do navegador Firefox
 - Navegador Firefox atualizado
 
+### Estrutura de pasta:
+```
+.
+│   log_file.log
+│   README.md
+│   script_mineracao.py
+│   valoresMoradia_2023-12-09_105404.csv
+│
+└───firefoxdriver-win64
+        geckodriver.exe
+    
+```
+
 ### Uso:
 Para usar basta executar os comandos: 
 
